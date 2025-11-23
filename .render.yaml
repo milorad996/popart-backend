@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: auto-marketplace-back
+    env: docker
+    dockerfilePath: ./Dockerfile
+    buildCommand: ""
+    startCommand: "service nginx start && php-fpm"
+    ports:
+      - 80
