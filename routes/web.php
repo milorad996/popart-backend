@@ -17,7 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/linkstorage', function () {
-    Artisan::call('storage:link');
-    return 'Storage link created';
-});
+
